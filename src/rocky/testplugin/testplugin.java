@@ -8,19 +8,10 @@ public class testplugin extends JavaPlugin{
     @Override
     public void onEnable(){
         this.getCommand("kit").setExecutor(new CommandKit());
+        this.getCommand("test").setExecutor(new CommandTest());
+        this.getCommand("kitpvp").setExecutor(new CommandPVPKit());
     }
     @Override
     public void onDisable(){
-    }
-    @Override
-    public boolean onCommand(CommandSender sender,
-                             Command command,
-                             String label,
-                             String[] args) {
-        if (command.getName().equalsIgnoreCase("test")) {
-            sender.sendMessage("You ran /test!");
-            return true;
-        }
-        return false;
     }
 }
