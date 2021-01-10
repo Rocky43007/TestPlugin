@@ -7,4 +7,10 @@ commands:
   kit:
     description: Test kit command
     usage: /kit
-    
+  test:
+    description: Says you ran /Test in chat.
+    usage: /test
+  kitpvp:
+    description: Gives you PVP kit.
+    usage: /kitpvp
+
